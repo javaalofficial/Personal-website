@@ -4236,6 +4236,16 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-/* .starter-section {
-  /* Add your styles here */
-/* } */ 
+.myContainer{
+  display: flex;
+  flex-wrap: wrap; /* Supaya kalau gak muat, dia turun rapi */
+  gap: 15px;
+}
+
+.mySquare {
+  flex: 1;          /* Kotak akan membagi ruang yang sama */
+  min-width: 250px; /* Lebar minimal kotak sebelum dia ganti baris */
+  background: var(--surface-color); /* Warna background sesuai tema kamu */
+  padding: 20px;
+  border-radius: 8px;
+}
